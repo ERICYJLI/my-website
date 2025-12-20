@@ -1,5 +1,5 @@
 ---
-title: "My First Post"
+title: "My First Post 1"
 description: "Just testing Hugo!"
 date: 2025-12-04
 draft: false

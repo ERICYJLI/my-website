@@ -1,0 +1,48 @@
+{{ define "main" }}
+
+  {{/* Intro card from content/_index.md */}}
+  {{ if .Content }}
+    <section class="article-list">
+      <article>
+        <div class="article-content intro-card">
+
+          {{ with .Title }}
+            <h1 style="margin-top: 0;">
+              {{ . }}
+            </h1>
+          {{ end }}
+
+          {{ with .Params.subtitle }}
+            <p style="margin-top: -0.5rem; opacity: 0.75;">
+              {{ . }}
+            </p>
+          {{ end }}
+
+          {{ .Content }}
+
+        </div>
+      </article>
+    </section>
+  {{ end }}
+
+  {{/* Original Stack homepage post list */}}
+  {{ $pages := where .Site.RegularPages "Type" "in" .Site.Params.mainSections }}
+  {{ $notHidden := where .Site.RegularPages "Params.hidden" "!=" true }}
+  {{ $notFuture := where .Site.RegularPages ".Date" "le" now }}
+  {{ $filtered := ($pages | intersect $notHidden | intersect $notFuture) }}
+  {{ $pag := .Paginate ($filtered) }}
+
+  <section class="article-list">
+    {{ range $pag.Pages }}
+      {{ partial "article-list/default" . }}
+    {{ end }}
+  </section>
+
+  {{ partial "pagination.html" . }}
+  {{ partial "footer/footer" . }}
+
+{{ end }}
+
+{{ define "right-sidebar" }}
+  {{ partial "sidebar/right.html" (dict "Context" . "Scope" "homepage") }}
+{{ end }}

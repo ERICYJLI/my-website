@@ -1,5 +1,5 @@
 ---
-title: My First Post
+title: My First Post Buddy
 description: A short introduction to this blog and my first post.
 slug: my-first-post
 date: 2025-12-04 00:00:00+0000
