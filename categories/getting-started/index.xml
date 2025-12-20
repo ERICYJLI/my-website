@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Getting Started on Eric Li</title><link>https://eric-li.ca/categories/getting-started/</link><description>Recent content in Getting Started on Eric Li</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 04 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://eric-li.ca/categories/getting-started/index.xml" rel="self" type="application/rss+xml"/><item><title>My First Post Buddy</title><link>https://eric-li.ca/posts/my-first-post/</link><pubDate>Thu, 04 Dec 2025 00:00:00 +0000</pubDate><guid>https://eric-li.ca/posts/my-first-post/</guid><description>&lt;p&gt;Welcome to my first post on this site. I&amp;rsquo;ll use this space to share short updates, notes, and experiments related to the project.&lt;/p&gt;
+&lt;p&gt;This post was created as a starter example. Edit the file at &lt;code&gt;content/posts/my-first-post/index.md&lt;/code&gt; to replace this text with your own content.&lt;/p&gt;
+&lt;p&gt;Tips:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Add images to the post by placing them in &lt;code&gt;assets/img/&lt;/code&gt; and referencing them in the Markdown.&lt;/li&gt;
+&lt;li&gt;Use categories and tags in the front matter to organize content.&lt;/li&gt;
+&lt;li&gt;Run &lt;code&gt;hugo server -D&lt;/code&gt; to preview the site locally.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Happy writing!&lt;/p&gt;</description></item></channel></rss>
